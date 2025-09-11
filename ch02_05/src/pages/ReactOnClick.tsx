@@ -1,0 +1,14 @@
+import type { SyntheticEvent } from "react";
+
+export default function ReactOnClick() {
+  const handleClick = (e: SyntheticEvent) => {
+    const { isTrusted, target, bubbles } = e;
+    console.log("mouse click occurs on <button>", isTrusted, target, bubbles);
+  };
+  return (
+    <>
+      <p> ReactOnclick</p>
+      <button onClick={handleClick}>Click Me</button>
+    </>
+  );
+}
