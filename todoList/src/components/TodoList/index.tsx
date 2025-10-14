@@ -11,11 +11,15 @@ interface TodoProps {
 const TodoList = ({ todos, currentTab }: TodoProps) => {
   return (
     <>
-      <Header />
-      {todos.map((todo) => (
-        <TodoItem key={todo.id} todo={todo} />
-      ))}
-      <Footer todos={todos} currentTab={currentTab} />
+      <div className="w-[600px] max-h-[calc(100vh-200px)] flex flex-col bg-white rounded-lg drop-shadow-md">
+        <Header />
+        <div className="h-full overflow-y-auto">
+          {todos.map((todo) => (
+            <TodoItem key={todo.id} todo={todo} />
+          ))}
+        </div>
+        <Footer todos={todos} currentTab={currentTab} />
+      </div>
     </>
   );
 };
