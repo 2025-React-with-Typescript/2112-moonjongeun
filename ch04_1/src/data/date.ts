@@ -1,4 +1,4 @@
-import { DateTime } from "../../node_modules/@types/luxon";
+import { DateTime } from "luxon";
 
 export const makeRandomPastDate = () => {
   const value = new Date().valueOf();
