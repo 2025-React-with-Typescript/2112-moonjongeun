@@ -4,7 +4,7 @@ const Signup = () => {
   return (
     <>
       <div className="flex w-full h-screen bg-[#fff] m-auto items-center justify-center">
-        <div className="flex flex-col items-center border-1 border-[#ccc] w-140 h-auto rounded-lg p-8">
+        <div className="flex flex-col items-center border-1 border-[#ccc] w-140 h-160 rounded-lg p-8">
           <div className="font-bold text-3xl">회원가입</div>
 
           <div className="flex flex-col gap-3 pt-12">
